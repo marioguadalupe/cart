@@ -1,80 +1,161 @@
 [
     {
         "brand":"Apple",
-        "name":"iPhone 8",
-        "price": 800.00,
+        "name":"iPhone 8 (64GB)",
+        "price": 599.99,
         "status":"new",
-        "image":"../app/data/iphone8.jpg"
+        "image":"../app/data/images/iphone8.jpg"
+
+    },
+    {
+        "brand":"Apple",
+        "name":"iPhone X (64GB)",
+        "price": 899.99,
+        "status":"new",
+        "image":"../app/data/images/iphonex.jpg"
+
+    },
+    {
+        "brand":"Apple",
+        "name":"iPhone XS (64GB)",
+        "price": 869.99,
+        "status":"new",
+        "image":"../app/data/images/iphonexs.jpg"
+
+    },
+    {
+        "brand":"Apple",
+        "name":"iPhone XR (64GB)",
+        "price": 749.99,
+        "status":"",
+        "image":"../app/data/images/iphonexr.jpg"
 
     },
     {
         "brand":"Samsung",
-        "name":"Galaxy S8",
-        "price": 500.00,
+        "name":"Galaxy S8 (64GB)",
+        "price": 389.99,
         "status":"new",
-        "image":"../app/data/galaxys8.jpg"
+        "image":"../app/data/images/galaxys8.jpg"
+
+    },
+    {
+        "brand":"Samsung",
+        "name":"Galaxy Note 8 (64GB)",
+        "price": 479.90,
+        "status":"new",
+        "image":"../app/data/images/note8.jpg"
+
+    },
+    {
+        "brand":"Samsung",
+        "name":"Galaxy S9 (64GB)",
+        "price": 459.99,
+        "status":"new",
+        "image":"../app/data/images/galaxys9.jpg"
+
+    },
+    {
+        "brand":"Samsung",
+        "name":"Galaxy Note 9 (64GB)",
+        "price": 849.99,
+        "status":"new",
+        "image":"../app/data/images/note9.jpg"
+
+    },
+    {
+        "brand":"Samsung",
+        "name":"Galaxy S10+ (512GB)",
+        "price": 1149.00,
+        "status":"new",
+        "image":"../app/data/images/galaxys10.jpg"
+
+    },
+    {
+        "brand":"Samsung",
+        "name":"Galaxy S10e (256GB)",
+        "price": 749.99,
+        "status":"new",
+        "image":"../app/data/images/galaxys10e.jpg"
 
     },
     {
         "brand":"Huawei",
-        "name":"P20Pro",
-        "price": 700.00,
+        "name":"P20Pro (128GB)",
+        "price": 525.00,
         "status":"new",
-        "image":"../app/data/p20pro.jpg"
+        "image":"../app/data/images/p20pro.jpg"
     },
     {
-        "brand":"",
-        "name":"",
-        "price": 0.00,
+        "brand":"Huawei",
+        "name":"P30Pro (256GB)",
+        "price": 828.99,
         "status":"new",
-        "image":"../app/data/"
+        "image":"../app/data/images/p30pro.jpg"
 
     },
     {
-        "brand":"",
-        "name":"",
-        "price": 0.00,
+        "brand":"Huawei",
+        "name":"Mate 20 Pro (128)",
+        "price": 629.00,
         "status":"new",
-        "image":"../app/data/"
+        "image":"../app/data/images/mate20pro.jpg"
 
     },
     {
-        "brand":"",
-        "name":"",
-        "price": 0,
-        "status":"",
-        "image":""
+        "brand":"LG",
+        "name":"G8 ThinQ (128GB)",
+        "price": 849.00,
+        "status":"new",
+        "image":"../app/data/images/g8.jpg"
 
     },
     {
-        "brand":"",
-        "name":"",
-        "price": 0.00,
+        "brand":"LG",
+        "name":"V40 (64GB)",
+        "price": 906.06,
         "status":"new",
-        "image":"../app/data/"
+        "image":"../app/data/images/v40.jpg"
 
     },
     {
-        "brand":"",
-        "name":"",
-        "price": 0.00,
+        "brand":"Google",
+        "name":"Pixel 3a XL (64GB)",
+        "price": 449.99,
         "status":"new",
-        "image":"../app/data/"
-
-    },{
-        "brand":"",
-        "name":"",
-        "price": 0.00,
-        "status":"new",
-        "image":"../app/data/"
+        "image":"../app/data/images/pixel3a.jpg"
 
     },
     {
-        "brand":"",
-        "name":"",
-        "price": 0.00,
+        "brand":"Google",
+        "name":"Pixel 3 XL (128GB)",
+        "price": 799.99,
         "status":"new",
-        "image":"../app/data/"
+        "image":"../app/data/images/pixel3.jpg"
+
+    },
+    {
+        "brand":"OnePlus",
+        "name":"7 Pro",
+        "price": 869.00,
+        "status":"new",
+        "image":"../app/data/images/7pro.jpg"
+
+    },
+    {
+        "brand":"Razer",
+        "name":"Phone 2 (64GB)",
+        "price": 599.00,
+        "status":"new",
+        "image":"../app/data/images/razer2.jpg"
+
+    },
+    {
+        "brand":"OPPO",
+        "name":"Find X (128GB)",
+        "price": 699.00,
+        "status":"new",
+        "image":"../app/data/images/findx.jpg"
 
     }
 ]
