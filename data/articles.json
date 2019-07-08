@@ -1,0 +1,80 @@
+[
+    {
+        "brand":"Apple",
+        "name":"iPhone 8",
+        "price": 800.00,
+        "status":"new",
+        "image":"../app/data/iphone8.jpg"
+
+    },
+    {
+        "brand":"Samsung",
+        "name":"Galaxy S8",
+        "price": 500.00,
+        "status":"new",
+        "image":"../app/data/galaxys8.jpg"
+
+    },
+    {
+        "brand":"Huawei",
+        "name":"P20Pro",
+        "price": 700.00,
+        "status":"new",
+        "image":"../app/data/p20pro.jpg"
+    },
+    {
+        "brand":"",
+        "name":"",
+        "price": 0.00,
+        "status":"new",
+        "image":"../app/data/"
+
+    },
+    {
+        "brand":"",
+        "name":"",
+        "price": 0.00,
+        "status":"new",
+        "image":"../app/data/"
+
+    },
+    {
+        "brand":"",
+        "name":"",
+        "price": 0,
+        "status":"",
+        "image":""
+
+    },
+    {
+        "brand":"",
+        "name":"",
+        "price": 0.00,
+        "status":"new",
+        "image":"../app/data/"
+
+    },
+    {
+        "brand":"",
+        "name":"",
+        "price": 0.00,
+        "status":"new",
+        "image":"../app/data/"
+
+    },{
+        "brand":"",
+        "name":"",
+        "price": 0.00,
+        "status":"new",
+        "image":"../app/data/"
+
+    },
+    {
+        "brand":"",
+        "name":"",
+        "price": 0.00,
+        "status":"new",
+        "image":"../app/data/"
+
+    }
+]
