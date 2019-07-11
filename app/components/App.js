@@ -1,7 +1,7 @@
 var ArticlesList = require('../articles/articlesList.js');
 var Brands = require('./Brands.js');
 var Home = require('./Home.js');
-var Nav = require('./Nav.js');
+var Header = require('./Header.js');
 var Cart = require('./Cart.js');
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -16,7 +16,7 @@ class App extends React.Component {
       return (
         <Router>
           <div>
-            <Nav/>
+            <Header/>
             
             <Switch>
               <Route exact path='/' component={Home} />

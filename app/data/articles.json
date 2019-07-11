@@ -1,9 +1,19 @@
 [
     {
+        "brand":"Sony",
+        "name":"Xperia 1 (128GB)",
+        "price": 919.99,
+        "status":"new",
+        "id":"#1",
+        "image":"../app/data/images/xperia1.jpg"
+        
+    },
+    {
         "brand":"Apple",
         "name":"iPhone 8 (64GB)",
         "price": 599.99,
         "status":"new",
+        "id":"#2",
         "image":"../app/data/images/iphone8.jpg"
 
     },
@@ -12,6 +22,7 @@
         "name":"iPhone X (64GB)",
         "price": 899.99,
         "status":"new",
+        "id":"#3",
         "image":"../app/data/images/iphonex.jpg"
 
     },
@@ -20,6 +31,7 @@
         "name":"iPhone XS (64GB)",
         "price": 869.99,
         "status":"new",
+        "id":"#4",
         "image":"../app/data/images/iphonexs.jpg"
 
     },
@@ -27,7 +39,8 @@
         "brand":"Apple",
         "name":"iPhone XR (64GB)",
         "price": 749.99,
-        "status":"",
+        "status":"new",
+        "id":"#5",
         "image":"../app/data/images/iphonexr.jpg"
 
     },
@@ -36,6 +49,7 @@
         "name":"Galaxy S8 (64GB)",
         "price": 389.99,
         "status":"new",
+        "id":"#6",
         "image":"../app/data/images/galaxys8.jpg"
 
     },
@@ -44,6 +58,7 @@
         "name":"Galaxy Note 8 (64GB)",
         "price": 479.90,
         "status":"new",
+        "id":"#7",
         "image":"../app/data/images/note8.jpg"
 
     },
@@ -52,6 +67,7 @@
         "name":"Galaxy S9 (64GB)",
         "price": 459.99,
         "status":"new",
+        "id":"#8",
         "image":"../app/data/images/galaxys9.jpg"
 
     },
@@ -60,6 +76,7 @@
         "name":"Galaxy Note 9 (64GB)",
         "price": 849.99,
         "status":"new",
+        "id":"#9",
         "image":"../app/data/images/note9.jpg"
 
     },
@@ -68,6 +85,7 @@
         "name":"Galaxy S10+ (512GB)",
         "price": 1149.00,
         "status":"new",
+        "id":"#10",
         "image":"../app/data/images/galaxys10.jpg"
 
     },
@@ -76,6 +94,7 @@
         "name":"Galaxy S10e (256GB)",
         "price": 749.99,
         "status":"new",
+        "id":"#11",
         "image":"../app/data/images/galaxys10e.jpg"
 
     },
@@ -84,6 +103,7 @@
         "name":"P20Pro (128GB)",
         "price": 525.00,
         "status":"new",
+        "id":"#12",
         "image":"../app/data/images/p20pro.jpg"
     },
     {
@@ -91,6 +111,7 @@
         "name":"P30Pro (256GB)",
         "price": 828.99,
         "status":"new",
+        "id":"#13",
         "image":"../app/data/images/p30pro.jpg"
 
     },
@@ -99,6 +120,7 @@
         "name":"Mate 20 Pro (128)",
         "price": 629.00,
         "status":"new",
+        "id":"#14",
         "image":"../app/data/images/mate20pro.jpg"
 
     },
@@ -107,6 +129,7 @@
         "name":"G8 ThinQ (128GB)",
         "price": 849.00,
         "status":"new",
+        "id":"#15",
         "image":"../app/data/images/g8.jpg"
 
     },
@@ -115,6 +138,7 @@
         "name":"V40 (64GB)",
         "price": 906.06,
         "status":"new",
+        "id":"#16",
         "image":"../app/data/images/v40.jpg"
 
     },
@@ -123,6 +147,7 @@
         "name":"Pixel 3a XL (64GB)",
         "price": 449.99,
         "status":"new",
+        "id":"#17",
         "image":"../app/data/images/pixel3a.jpg"
 
     },
@@ -131,6 +156,7 @@
         "name":"Pixel 3 XL (128GB)",
         "price": 799.99,
         "status":"new",
+        "id":"#18",
         "image":"../app/data/images/pixel3.jpg"
 
     },
@@ -139,6 +165,7 @@
         "name":"7 Pro",
         "price": 869.00,
         "status":"new",
+        "id":"#19",
         "image":"../app/data/images/7pro.jpg"
 
     },
@@ -147,6 +174,7 @@
         "name":"Phone 2 (64GB)",
         "price": 599.00,
         "status":"new",
+        "id":"#20",
         "image":"../app/data/images/razer2.jpg"
 
     },
@@ -155,6 +183,7 @@
         "name":"Find X (128GB)",
         "price": 699.00,
         "status":"new",
+        "id":"#21",
         "image":"../app/data/images/findx.jpg"
 
     }

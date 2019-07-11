@@ -16,7 +16,7 @@ class Brands extends React.Component {
         });
     }
     render() {
-        var brands = ['ALL', 'Apple', 'Samsung', 'Huawei', 'Google', 'LG', 'OnePLus', 'Razer', 'OPPO'];
+        var brands = ['ALL', 'Sony', 'Apple', 'Samsung', 'Huawei', 'Google', 'LG', 'OnePLus', 'Razer', 'OPPO'];
         return (
             <ul className='brands'>
                 {brands.map(function(brand){return(<li style={brand === this.state.selectedBrand ? {color:'red' }: null } onClick={this.updateBrand.bind(null, brand)} key={brand}>{brand}</li>)}, this)}
