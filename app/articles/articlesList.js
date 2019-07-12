@@ -2,9 +2,9 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var articles = require('../data/articles.json');
 var Cart = require('../components/Cart.js');
-var Adder = require('../components/Adder')
+var Total = require('../components/Total')
 
-function articlesGrid(){
+function ArticlesList(props){
   return (
   <ul className='home-list'>
     {articles.map(function(article){
@@ -26,9 +26,8 @@ function articlesGrid(){
             <button 
               type="button" 
               className="adder"
-              onClick={()=>{Adder(article.price)}}>
+              onClick={()=> {props.addToCart(article)}}>
                 Add 
-              <span id="counter1"> 0</span>
             </button>
           </li>
         </ul>
@@ -38,18 +37,6 @@ function articlesGrid(){
   </ul>
   )
 }
-
-
-class ArticlesList extends React.Component {
-    render() {
-      return (
-        <div>
-          {articlesGrid()}
-        </div>
-        
-      )
-    }
-};
 
 
 module.exports = ArticlesList;
