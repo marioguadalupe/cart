@@ -41,8 +41,6 @@ li {
 }
 
 
-
-
 .header-bar {
   background: black;
   display:flex;
@@ -61,17 +59,17 @@ li {
 }
 
 
-.shop-cart{
+.cart{
   width: auto;
   display:flex;
   
 }
 
-.shop-cart li{
+/* .shop-cart li{
   margin: 10px;
   font-weight: bold;
   cursor: pointer;
-}
+} */
 
 
 

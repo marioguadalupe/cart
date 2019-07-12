@@ -11,20 +11,11 @@ class Header extends React.Component {
         </NavLink>
         
       </h1>
-      <ul className='shop-cart'>
-        <li key='shop'>
-          <NavLink activeClassName='active' to='/shop'>
-            Shop
-          </NavLink>
-        
-        </li>
-        <li key='cart'>
+      <p className='cart'>
           <NavLink activeClassName='active' to='/cart'>
             Cart
           </NavLink>
-        </li>
-      </ul>
-      
+      </p>
     </div>
   )
 }
