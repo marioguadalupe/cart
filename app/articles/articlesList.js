@@ -1,8 +1,5 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
 var articles = require('../data/articles.json');
-var Cart = require('../components/Cart.js');
-var Total = require('../components/Total')
 
 function ArticlesList(props){
   return (
