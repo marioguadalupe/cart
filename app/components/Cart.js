@@ -1,5 +1,4 @@
 var React = require('react');
-var Total = require('./Total.js')
 
 
 class Cart extends React.Component {
@@ -7,38 +6,60 @@ class Cart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      totalPay:0
+      totalPay: 0,
+      articles: []
     };
-    this.total = this.total.bind(this);
+    this.total = this.total.bind(this);  
   }
 
-  total(){
-    console.log(this.props);
-    const totalPay = this.props.articlesInCart.reduce(function(finalPrice, article){
+  total() {
+    const totalPay = this.props.articlesInCart.reduce(function (finalPrice, article) {
       return article.price + finalPrice
-    },this.state.totalPay);
+    }, this.state.totalPay);
 
-    this.setState({totalPay})
+    this.setState({ totalPay })
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.total();
+    this.verify(this.props.articlesInCart, this.state.articles);
   }
 
+  verify(list, addTo) {
+    list.forEach(function (element) {
+      if (addTo.every(function (check) {
+        return check.name != element.name
+      })) { 
+        return element.amount = 1, addTo.push(element) 
+      }
+      else {
+        addTo.forEach(function (ele) {
+          if (ele.name == element.name) {
+            ele.amount += 1
+          }
+        })
+      }
+    })
+  }
 
   render() {
+
+    const articles = this.state.articles;
+    
     return (
       <div>
         <h1>
-            Cart 
+          Cart
         </h1>
         <ul>
-          {this.props.articlesInCart.map(function(article){
+
+          {articles.map(function(article){
             return (
               <div>
                 <img src={article.image} alt={article.name}/>
                 <li key={article.brand}>{article.brand +' '+ article.name}</li>
                 <li key={article.status}>{`${article.status} $ ${article.price} `}</li>
+                <li key={article.id}>{article.amount}</li>
                 
               </div>
             )
@@ -46,24 +67,24 @@ class Cart extends React.Component {
         </ul>
 
         <ul>
-          <li>Coupon:</li>
-          <li>{`Subtotal: ${this.state.totalPay}`}</li>
-          <li>Shipping:</li>
-          <li>{`TOTAL: ${this.state.totalPay}`}</li>
+          <li key='coupon'>Coupon:</li>
+          <li key='subtotal'>{`Subtotal: ${this.state.totalPay}`}</li>
+          <li key='shipping '>Shipping:</li>
+          <li key='total'>{`TOTAL: ${this.state.totalPay}`}</li>
         </ul>
-        <button 
-          type="button" 
+        <button
+          type="button"
           className="visa-checkout"
-          >
-            VISA Checkout 
+        >
+          VISA Checkout
         </button>
-        <button 
-          type="button" 
+        <button
+          type="button"
           className="checkout"
-          >
-            CHECKOUT 
+        >
+          CHECKOUT
         </button>
-      </div>   
+      </div>
     )
   }
 };
