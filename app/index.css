@@ -23,16 +23,20 @@ li {
 .home-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
 }
 
 .home-item {
   margin: 20px;
   text-align: center;
+  width: 25%;
 }
 
 .space-list-items {
   margin-bottom: 7px;
+  
 }
 
 .phonePic {
@@ -60,6 +64,7 @@ li {
   display: flex;
 }
 
+
 /* ------------------------------------------------------------------------- */
 /* articles in cart */
 
@@ -67,20 +72,112 @@ li {
   width:50%;
   height: auto;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
 }
 .article-in-cart-image{ 
   width:25%;
 }
 
-.article-in-cart-info{
+/* ------------------------------------------------------------------------- */
+/* articles in cart header */
+
+.aricles-header{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(175, 175, 175);
+ 
+}
+
+.aricles-header li {
+  list-style-type: none;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.aricles-header-item{
+  width: 40%;
+}
+.aricles-header-price{
+  width: 20%;
+}
+
+.aricles-header-quantity{
+  width: 20%;
+}
+
+.aricles-header-total{
+  width: 20%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* articles in cart header */
+
+.article-in-cart-info {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.article-in-cart-info li {
+  list-style-type: none;
+  margin: 10px;
+  text-align: center;
 
 }
+.article-in-cart-item{
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+}
+.article-in-cart-info img {
+  width: 80%;
+  height: 10em;
+}
+
+.article-in-cart-price {
+  width: 20%;
+}
+
+.article-in-cart-quantity{
+  width: 20%;
+}
+.article-in-cart-quantity input{
+  width: 20%;
+
+
+}
+
+.article-in-cart-total-amount{
+  width: 20%;
+}
+
+  
+
+
+
 
 
 
 /* ------------------------------------------------------------------------- */
 /* butttons */
+
+.adder{
+  border:1px;
+  border-style: solid;
+  border-color: green;
+  background-color: white;
+  font-weight: bold;
+}
+
+.adder:hover {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
 
 .purchase-information{
   max-width: 50%;

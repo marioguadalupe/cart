@@ -56,16 +56,29 @@ class Cart extends React.Component {
           {articles.map(function(article) {
             return (
               <div className="articles-in-cart">
-                <img className="article-in-cart-image" src={article.image} alt={article.name} />
-                <div className="article-in-cart-info">
-                  <li key={article.brand}>
+                <ul className="aricles-header">
+                  <li key="item" className="aricles-header-item">Item</li>
+                  <li key="price" className="aricles-header-price">Price</li>
+                  <li key="quantity" className="aricles-header-quantity">Quantity</li>
+                  <li key="total" className="aricles-header-total">Total</li>
+                </ul>
+                <ul className="article-in-cart-info">
+                  <li key={article.brand} className="article-in-cart-item">
+                    <img className="article-in-cart-image" src={article.image} alt={article.name} />
                     {article.brand + " " + article.name}
                   </li>
-                  <li key={article.status}>{`${article.status} $ ${
-                    article.price
-                  } `}</li>
-                  <li key={article.id}>amount ${article.amount}</li>
-                </div>
+                  <li key={article.status} className="article-in-cart-price">
+                    {`${article.status} $ ${article.price} `}
+                  </li>
+                  <li key={article.id} className="article-in-cart-quantity">
+                    <input type="number" value={article.amount}/>
+                    
+                  </li>
+                  <li key="total-amount" className="article-in-cart-total-amount">
+                    {article.price * article.amount}
+                  </li>
+                </ul>
+                
               </div>
             );
           })}
