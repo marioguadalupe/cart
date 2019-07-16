@@ -4,17 +4,17 @@ var Brands = require('./Brands.js');
 
 
 class Home extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
   render() {
     console.log(this.props.articlesInCart);
     return (
       <div>
-        <Brands/>
-        <ArticlesList addToCart={this.props.addToCart}/>
+        <Brands />
+        <ArticlesList addToCart={this.props.addToCart} />
       </div>
-      
+
     )
   }
 };

@@ -1,15 +1,15 @@
 body {
-    background: white;
-    margin:0px;
+  background: white;
+  margin: 0px;
 }
 ul {
-  padding:0;
+  padding: 0;
 }
 
 li {
   list-style-type: none;
 }
-.brands{
+.brands {
   display: flex;
   justify-content: center;
 }
@@ -21,7 +21,7 @@ li {
 }
 
 .home-list {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -31,45 +31,210 @@ li {
   text-align: center;
 }
 
-.space-list-items{
+.space-list-items {
   margin-bottom: 7px;
 }
 
 .phonePic {
   width: 150px;
-  height: 200px
+  height: 200px;
 }
-
 
 .header-bar {
   background: black;
-  display:flex;
+  display: flex;
 }
 
-
-.header-bar a{
+.header-bar a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 .store-name {
   width: 90%;
   margin-left: 2%;
+}
+
+.cart {
+  width: auto;
+  display: flex;
+}
+
+/* ------------------------------------------------------------------------- */
+/* articles in cart */
+
+.articles-in-cart{ 
+  width:50%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+}
+.article-in-cart-image{ 
+  width:25%;
+}
+
+.article-in-cart-info{
 
 }
 
 
-.cart{
-  width: auto;
+
+/* ------------------------------------------------------------------------- */
+/* butttons */
+
+.purchase-information{
+  max-width: 50%;
+}
+
+.details-purchase-information{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+
+}
+
+
+.all-buttons{
+
+  display: flex;
+  flex-flow: row;
+  max-width: 50%;
+}
+
+.credict-cards {
+
+  display: flex;
+  flex-flow: column;
+  min-width: 50%;
+}
+
+.large-buttons {
+
+  display: flex;
+  flex-flow: row;
+  min-width: 50%;
+}
+
+.top-buttons{
   display:flex;
+  flex-direction: row
+}
+
+.enter-code{
+  width: 70%;
+}
+
+.apply{
+  font-family: Arial;
+  font-weight: bold;
+  color: white;
+  border: none;
+  width: 30%;
+  height: 25%;
+  background: linear-gradient(0.25turn, #304247, #000000, #304247);
+}
+
+
+.paypal-button-b {
+  border: none;
+  border-radius: 40px;
+  background-color: rgb(14, 14, 133);
+  padding: 14px 60px;
+
+}
+
+.paypal-b {
+  font-family: Verdana, Tahoma;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  color: white;
+}
+
+.paypal-button-y {
+  border: none;
+  border-radius: 40px;
+  background-image: linear-gradient(#fff0a8, #f9b421);
+  padding: 14px 60px;
   
 }
-
-/* .shop-cart li{
-  margin: 10px;
+.paypal-logo-y {
+  font-family: Verdana, Tahoma;
   font-weight: bold;
-  cursor: pointer;
-} */
+}
+.pay-y {
+  color: #253b80;
+}
+.pal-y {
+  color: #179bd7;
+}
+
+.paypal-button-title-y {
+  font-size: 14px;
+  color: #505050;
+  font-weight: bold;
+  vertical-align: baseline;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+}
+
+.paypal-logo-y {
+  display: inline-block;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+}
 
 
+
+.credict-cards-small{
+  display: flex;
+  flex-flow: row;
+}
+
+.checkout{
+  width: 50%;
+  height: 25%;
+  border: none;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
+}
+
+.visa-checkout{
+  border: none;
+  border-radius: 10px;
+  height: 25%;
+  width: 50%;
+}
+
+
+.visa-small-logo {
+  border: none;
+  border-radius: 10px;
+  height: 30%;
+  width: 24%;
+  margin: 1%;
+}
+
+.mastercard-logo {
+  border: none;
+  border-radius: 10px;
+  height: 30%;
+  width: 23%;
+  background: black;
+  margin: 1%;
+}
+
+.amex-logo{
+  border: none;
+  border-radius: 10px;
+  height: 30%;
+  width: 23%;
+  margin: 1%;
+}
+
+.discover-logo{
+  border: none;
+  border-radius: 10px;
+  height: 30%;
+  width: 23%;
+  margin: 1%;
+}
 

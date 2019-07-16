@@ -1,23 +1,25 @@
-var React = require('react');
-
+var React = require("react");
 
 class Cart extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
       totalPay: 0,
       articles: []
     };
-    this.total = this.total.bind(this);  
+    this.total = this.total.bind(this);
   }
 
   total() {
-    const totalPay = this.props.articlesInCart.reduce(function (finalPrice, article) {
-      return article.price + finalPrice
-    }, this.state.totalPay);
+    const totalPay = this.props.articlesInCart.reduce(function(
+      finalPrice,
+      article
+    ) {
+      return article.price + finalPrice;
+    },
+    this.state.totalPay);
 
-    this.setState({ totalPay })
+    this.setState({ totalPay });
   }
 
   componentDidMount() {
@@ -26,68 +28,101 @@ class Cart extends React.Component {
   }
 
   verify(list, addTo) {
-    list.forEach(function (element) {
-      if (addTo.every(function (check) {
-        return check.name != element.name
-      })) { 
-        return element.amount = 1, addTo.push(element) 
-      }
-      else {
-        addTo.forEach(function (ele) {
-          if (ele.name == element.name) {
-            ele.amount += 1
-          }
+    list.forEach(function(element) {
+      if (
+        addTo.every(function(check) {
+          return check.name != element.name;
         })
+      ) {
+        return (element.amount = 1), addTo.push(element);
+      } else {
+        addTo.forEach(function(ele) {
+          if (ele.name == element.name) {
+            ele.amount += 1;
+          }
+        });
       }
-    })
+    });
   }
 
   render() {
-
     const articles = this.state.articles;
-    
+
     return (
       <div>
-        <h1>
-          Cart
-        </h1>
+        <h1>Cart</h1>
         <ul>
 
-          {articles.map(function(article){
+          {articles.map(function(article) {
             return (
-              <div>
-                <img src={article.image} alt={article.name}/>
-                <li key={article.brand}>{article.brand +' '+ article.name}</li>
-                <li key={article.status}>{`${article.status} $ ${article.price} `}</li>
-                <li key={article.id}>{article.amount}</li>
-                
+              <div className="articles-in-cart">
+                <img className="article-in-cart-image" src={article.image} alt={article.name} />
+                <div className="article-in-cart-info">
+                  <li key={article.brand}>
+                    {article.brand + " " + article.name}
+                  </li>
+                  <li key={article.status}>{`${article.status} $ ${
+                    article.price
+                  } `}</li>
+                  <li key={article.id}>amount ${article.amount}</li>
+                </div>
               </div>
-            )
+            );
           })}
         </ul>
+        <div className="purchase-information">
 
-        <ul>
-          <li key='coupon'>Coupon:</li>
-          <li key='subtotal'>{`Subtotal: ${this.state.totalPay}`}</li>
-          <li key='shipping '>Shipping:</li>
-          <li key='total'>{`TOTAL: ${this.state.totalPay}`}</li>
-        </ul>
-        <button
-          type="button"
-          className="visa-checkout"
-        >
-          VISA Checkout
-        </button>
-        <button
-          type="button"
-          className="checkout"
-        >
-          CHECKOUT
-        </button>
+          <ul className="details-purchase-information">
+            <div className="top-buttons">
+              <form className="enter-code"><input type="text" placeholder="Enter your coupon code"/></form>
+
+
+              <button type="button" className="apply">
+                APPLY
+              </button>
+            </div>
+            <li key="coupon">Coupon:</li>
+            <li key="subtotal">{`Subtotal: ${this.state.totalPay}`}</li>
+            <li key="shipping ">Shipping:</li>
+            <li key="total">{`TOTAL: ${this.state.totalPay}`}</li>
+          </ul>
+
+        </div>
+      <div className="all-buttons">
+        <div className="credict-cards">
+            <button type="button" className="paypal-button-b">
+              <div class="paypal-b">PayPal CREDIT</div>
+            </button>
+
+            <button type="button" className="paypal-button-y">
+              <span class="paypal-logo-y">
+                <i className="pay-y">Pay</i>
+                <i className="pal-y">Pal</i>
+              </span>
+              <span className="paypal-button-title-y">Checkout</span>
+            </button>
+
+          
+            <div className="credict-cards-small" >
+              <img className="visa-small-logo" src="../app/data/images/visalogosmall.png"/>
+              <img className="mastercard-logo" src="../app/data/images/mastercardlogo.png"/>
+              <img className="amex-logo" src="../app/data/images/amexlogo.jpg"/>
+              <img className="discover-logo" src="../app/data/images/discoverlogo.png"/>
+            </div>
+        </div>
+        <div className="large-buttons">
+
+            
+            <img className="visa-checkout" src="../app/data/images/visacheckoutlogo.jpg"/>
+            <button type="button" className="checkout">
+              CHECKOUT
+            </button>
+        </div>
       </div>
-    )
-  }
-};
 
+      </div>
+    );
+  }
+}
 
 module.exports = Cart;
