@@ -13,7 +13,7 @@ class Header extends React.Component {
       </h1>
       <p className='cart'>
           <NavLink activeClassName='active' to='/cart'>
-            Cart
+            <i class="material-icons">shopping_cart</i>
           </NavLink>
       </p>
     </div>

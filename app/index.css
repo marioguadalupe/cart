@@ -1,7 +1,33 @@
 body {
   background: white;
   margin: 0px;
+  width: 100%;
+  
 }
+.header-bar {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+.store-name {
+  text-align: center;
+  margin-top: 5px; 
+  margin-bottom: 2px;
+}
+
+.cart {
+  text-align: center;
+  margin-top: 5px; 
+  margin-bottom: 2px;
+}
+
 ul {
   padding: 0;
 }
@@ -12,6 +38,8 @@ li {
 .brands {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .brands li {
@@ -24,53 +52,60 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
-.home-item {
-  margin: 20px;
+.home-list {
+  display: flex;
+  flex-flow: column;
+}
+.home-item{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: auto;
   text-align: center;
-  width: 25%;
 }
 
 .space-list-items {
-  margin-bottom: 7px;
-  
+  margin-bottom: 3px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  background-color: white;
 }
 
+
+/* ----------------------------- */
 .phonePic {
-  width: 150px;
-  height: 200px;
+  width: 80%;
+  height: 80%;
+}
+/* ----------------------------- */
+
+
+.adder{
+  border:1px;
+  border-style: solid;
+  border-color: green;
+  background-color: white;
+  font-weight: bold;
 }
 
-.header-bar {
-  background: black;
-  display: flex;
-}
-
-.header-bar a {
-  text-decoration: none;
+.adder:hover {
+  background-color: green;
   color: white;
-}
-
-.store-name {
-  width: 90%;
-  margin-left: 2%;
-}
-
-.cart {
-  width: auto;
-  display: flex;
+  font-weight: bold;
 }
 
 
 /* ------------------------------------------------------------------------- */
-/* articles in cart */
+  /* articles in cart */
+
+
+.cart-header{
+  text-align: center;
+}
 
 .articles-in-cart{ 
-  width:50%;
-  height: auto;
   display: flex;
   flex-flow: column;
 }
@@ -78,65 +113,44 @@ li {
   width:25%;
 }
 
-/* ------------------------------------------------------------------------- */
-/* articles in cart header */
-
 .aricles-header{
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid rgb(175, 175, 175);
- 
+  display:none;
 }
 
-.aricles-header li {
-  list-style-type: none;
-  margin: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-}
-
-.aricles-header-item{
-  width: 40%;
-}
-.aricles-header-price{
-  width: 20%;
-}
-
-.aricles-header-quantity{
-  width: 20%;
-}
-
-.aricles-header-total{
-  width: 20%;
-}
 
 /* ------------------------------------------------------------------------- */
-/* articles in cart header */
+  /* articles in cart */
 
 .article-in-cart-info {
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
 }
 
-.article-in-cart-info li {
-  list-style-type: none;
-  margin: 10px;
-  text-align: center;
-
-}
 .article-in-cart-item{
   display: flex;
-  flex-flow: column;
-  width: 40%;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px;
+  justify-content: center;
 }
-.article-in-cart-info img {
+
+.article-in-cart-details {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.article-in-cart-image {
+  display: flex;
   width: 80%;
-  height: 10em;
+  height: 250px;
+  justify-content: center;
 }
+
 
 .article-in-cart-price {
   width: 20%;
@@ -158,180 +172,211 @@ li {
   
 
 
-
-
-
-
-/* ------------------------------------------------------------------------- */
-/* butttons */
-
-.adder{
-  border:1px;
-  border-style: solid;
-  border-color: green;
-  background-color: white;
-  font-weight: bold;
-}
-
-.adder:hover {
-  background-color: green;
-  color: white;
-  font-weight: bold;
-}
-
-.purchase-information{
-  max-width: 50%;
-}
-
-.details-purchase-information{
-  width: 50%;
-  display: block;
-  margin-left: auto;
-
-}
-
-
-.all-buttons{
-
-  display: flex;
-  flex-flow: row;
-  max-width: 50%;
-}
-
-.credict-cards {
-
-  display: flex;
-  flex-flow: column;
-  min-width: 50%;
-}
-
-.large-buttons {
-
-  display: flex;
-  flex-flow: row;
-  min-width: 50%;
-}
-
-.top-buttons{
-  display:flex;
-  flex-direction: row
-}
-
-.enter-code{
-  width: 70%;
-}
-
-.apply{
-  font-family: Arial;
-  font-weight: bold;
-  color: white;
-  border: none;
-  width: 30%;
-  height: 25%;
-  background: linear-gradient(0.25turn, #304247, #000000, #304247);
-}
-
-
-.paypal-button-b {
-  border: none;
-  border-radius: 40px;
-  background-color: rgb(14, 14, 133);
-  padding: 14px 60px;
-
-}
-
-.paypal-b {
-  font-family: Verdana, Tahoma;
-  font-weight: bold;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
-  font-size: 20px;
-  color: white;
-}
-
-.paypal-button-y {
-  border: none;
-  border-radius: 40px;
-  background-image: linear-gradient(#fff0a8, #f9b421);
-  padding: 14px 60px;
+@media (min-width: 1024px){
   
-}
-.paypal-logo-y {
-  font-family: Verdana, Tahoma;
-  font-weight: bold;
-}
-.pay-y {
-  color: #253b80;
-}
-.pal-y {
-  color: #179bd7;
-}
 
-.paypal-button-title-y {
-  font-size: 14px;
-  color: #505050;
-  font-weight: bold;
-  vertical-align: baseline;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
-}
+  /* ------------------------------------------------------------------------- */
+  /* articles in cart header */
 
-.paypal-logo-y {
-  display: inline-block;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
-  font-size: 20px;
-}
+  .aricles-header{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(175, 175, 175);
+  
+  }
 
+  .aricles-header li {
+    list-style-type: none;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
 
+  .aricles-header-item{
+    width: 40%;
+  }
+  .aricles-header-price{
+    width: 20%;
+  }
 
-.credict-cards-small{
-  display: flex;
-  flex-flow: row;
-}
+  .aricles-header-quantity{
+    width: 20%;
+  }
 
-.checkout{
-  width: 50%;
-  height: 25%;
-  border: none;
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
-}
+  .aricles-header-total{
+    width: 20%;
+  }
 
-.visa-checkout{
-  border: none;
-  border-radius: 10px;
-  height: 25%;
-  width: 50%;
-}
+  
 
 
-.visa-small-logo {
-  border: none;
-  border-radius: 10px;
-  height: 30%;
-  width: 24%;
-  margin: 1%;
-}
 
-.mastercard-logo {
-  border: none;
-  border-radius: 10px;
-  height: 30%;
-  width: 23%;
-  background: black;
-  margin: 1%;
-}
 
-.amex-logo{
-  border: none;
-  border-radius: 10px;
-  height: 30%;
-  width: 23%;
-  margin: 1%;
-}
 
-.discover-logo{
-  border: none;
-  border-radius: 10px;
-  height: 30%;
-  width: 23%;
-  margin: 1%;
+
+  /* ------------------------------------------------------------------------- */
+  /* butttons */
+
+  
+
+  .purchase-information{
+    max-width: 50%;
+  }
+
+  .details-purchase-information{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+
+  }
+
+
+  .all-buttons{
+
+    display: flex;
+    flex-flow: row;
+    max-width: 50%;
+  }
+
+  .credict-cards {
+
+    display: flex;
+    flex-flow: column;
+    min-width: 50%;
+  }
+
+  .large-buttons {
+
+    display: flex;
+    flex-flow: row;
+    min-width: 50%;
+  }
+
+  .top-buttons{
+    display:flex;
+    flex-direction: row
+  }
+
+  .enter-code{
+    width: 70%;
+  }
+
+  .apply{
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    border: none;
+    width: 30%;
+    height: 25%;
+    background: linear-gradient(0.25turn, #304247, #000000, #304247);
+  }
+
+
+  .paypal-button-b {
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(14, 14, 133);
+    padding: 14px 60px;
+
+  }
+
+  .paypal-b {
+    font-family: Verdana, Tahoma;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    color: white;
+  }
+
+  .paypal-button-y {
+    border: none;
+    border-radius: 40px;
+    background-image: linear-gradient(#fff0a8, #f9b421);
+    padding: 14px 60px;
+    
+  }
+  .paypal-logo-y {
+    font-family: Verdana, Tahoma;
+    font-weight: bold;
+  }
+  .pay-y {
+    color: #253b80;
+  }
+  .pal-y {
+    color: #179bd7;
+  }
+
+  .paypal-button-title-y {
+    font-size: 14px;
+    color: #505050;
+    font-weight: bold;
+    vertical-align: baseline;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+  }
+
+  .paypal-logo-y {
+    display: inline-block;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+  }
+
+
+
+  .credict-cards-small{
+    display: flex;
+    flex-flow: row;
+  }
+
+  .checkout{
+    width: 50%;
+    height: 25%;
+    border: none;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
+  }
+
+  .visa-checkout{
+    border: none;
+    border-radius: 10px;
+    height: 25%;
+    width: 50%;
+  }
+
+
+  .visa-small-logo {
+    border: none;
+    border-radius: 10px;
+    height: 30%;
+    width: 24%;
+    margin: 1%;
+  }
+
+  .mastercard-logo {
+    border: none;
+    border-radius: 10px;
+    height: 30%;
+    width: 23%;
+    background: black;
+    margin: 1%;
+  }
+
+  .amex-logo{
+    border: none;
+    border-radius: 10px;
+    height: 30%;
+    width: 23%;
+    margin: 1%;
+  }
+
+  .discover-logo{
+    border: none;
+    border-radius: 10px;
+    height: 30%;
+    width: 23%;
+    margin: 1%;
+  }
+
+
 }
 
